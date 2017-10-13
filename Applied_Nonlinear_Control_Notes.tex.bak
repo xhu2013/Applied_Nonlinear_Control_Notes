@@ -14,7 +14,7 @@
 
 %这是文章的标题
 
-\title{Notes on Applied Nonlinear Control}
+\title{LaTex 常用模板}
 
 %这是文章的作者
 
@@ -26,7 +26,7 @@
 
 %如果不想显示时间则使用 \date{}
 
-\date{2017/10/10}
+\date{2008/10/12}
 
 %以上部分叫做"导言区",下面才开始写正文
 
@@ -70,7 +70,7 @@ with ${\bf x}$ being a vector of states and ${\bf A}$ being the system matrix. L
 
 \noindent $Remark$: superposition
 
-\subsubsection{Multiple Equilibrium Points}
+\noindent {\bf Multiple Equilibrium Points}
 
 %\noindent $Example$:
 %$$\dot{x}=-x+x^2$$
@@ -84,21 +84,14 @@ with ${\bf x}$ being a vector of states and ${\bf A}$ being the system matrix. L
 
 For the linearized system, stability is seen by noting that for any initial condition, the motion always converges to the equilibrium point $x=0$.
 
-\subsubsection{Limit Cycles}
+\noindent {\bf Limit Cycles}
 
 Limit cycles in nonlinear systems are different from linear oscillations in a number of fundamental aspects. First, the amplitude of the self-sustained excitation is independent of the initial condition, while the oscillation of a marginally stable linear system has its amplitude determined by its initial conditions. Second, marginally stable linear systems are very sensitive to changes in system parameters (with a slight change capable of leading either to stable convergence or to instability), while limit cycles are not easily affected by parameter changes.
 
-\subsubsection{Bifurcations}
+\noindent {\bf Bifurcations}
 
-\subsubsection{Chaos}
+\noindent {\bf Chaos}
 
-\section{Phase Plane Analysis}
-
-\subsection{Concepts of Phase Plane Analysis}
-\subsubsection{Phase Portraits}
-\subsubsection{Singular Points}
-
-\subsection{Constructing Phase Portraits}
 
 
 
