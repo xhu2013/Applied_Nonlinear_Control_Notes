@@ -14,7 +14,7 @@
 
 %这是文章的标题
 
-\title{LaTex 常用模板}
+\title{Notes on Applied Nonlinear Control}
 
 %这是文章的作者
 
@@ -26,7 +26,7 @@
 
 %如果不想显示时间则使用 \date{}
 
-\date{2008/10/12}
+\date{2017/10/10}
 
 %以上部分叫做"导言区",下面才开始写正文
 
@@ -70,7 +70,7 @@ with ${\bf x}$ being a vector of states and ${\bf A}$ being the system matrix. L
 
 \noindent $Remark$: superposition
 
-\noindent {\bf Multiple Equilibrium Points}
+\subsubsection{Multiple Equilibrium Points}
 
 %\noindent $Example$:
 %$$\dot{x}=-x+x^2$$
@@ -79,23 +79,57 @@ with ${\bf x}$ being a vector of states and ${\bf A}$ being the system matrix. L
 %解得$x(t)=x_0e^{-t}$
 %当$t\rightarrow \infty$时，收敛到0，所以平衡点为$x=0$。
 %
-%当考虑$\dot{x}=-x+x^2$时，解得到$x(t)-\frac{x_0e^{-t}}{1-x_0+x_0e^{-t}}$，当$t\rightarrow \infty$，根据不用的初始条件$x_0$，收敛到0或1，所以平衡点为$x=0$和$x=1$。
+%当考虑$\dot{x}=-x+x^2$时，解得到$x(t)-\frac{x_0e^{-t}}{1-x_0+x_0e^{-t}}$，当$t\rightarrow \infty$，根据不用的初始条件$x_0$，收敛到0 或1，所以平衡点为$x=0$和$x=1$。
 
 
 For the linearized system, stability is seen by noting that for any initial condition, the motion always converges to the equilibrium point $x=0$.
 
-\noindent {\bf Limit Cycles}
+\subsubsection{Limit Cycles}
 
 Limit cycles in nonlinear systems are different from linear oscillations in a number of fundamental aspects. First, the amplitude of the self-sustained excitation is independent of the initial condition, while the oscillation of a marginally stable linear system has its amplitude determined by its initial conditions. Second, marginally stable linear systems are very sensitive to changes in system parameters (with a slight change capable of leading either to stable convergence or to instability), while limit cycles are not easily affected by parameter changes.
 
-\noindent {\bf Bifurcations}
+\subsubsection{Bifurcations}
 
-\noindent {\bf Chaos}
+\subsubsection{Chaos}
 
+\section{Phase Plane Analysis}
 
+\subsection{Concepts of Phase Plane Analysis}
+\subsubsection{Phase Portraits}
+\subsubsection{Singular Points}
 
+\subsection{Constructing Phase Portraits}
 
+\section{Phase Plane Analysis}
 
+\subsection{Phase Plane Analysis of Nonlinear Systems}
+Phase plane analysis of nonlinear systems is related to that of linear systems, because the local behavior of a nonlinear system can be approximated by a linear system behavior. Yet, nonlinear systems can display much more complicated patterns in the phase plane, such as multiple equilibrium points and limit cycles.
+
+\subsubsection{Limit Cycles}
+In the phase plane, a limit cycle is defined as an isolated closed curve.
+
+Depending on the motion patterns of the trajectories in the vicinity of the limit cycle, one can distinguish three kinds of limit cycles
+\begin{enumerate}
+  \item all trajectories in the vicinity of the limit cycle converge to it as $t\rightarrow \infty$;
+  \item all trajectories in the vicinity of the limit cycle diverge from it as $t\rightarrow \infty$;
+  \item some of the trajectories in the vicinity converge to it, while the others diverge from it as $t\rightarrow \infty$;
+\end{enumerate}
+
+\section{Fundamentals of Lyapunov Theory}
+\subsection{Nonlinear Systems and Equilibrium Points}
+\subsubsection{Autonomous and Non-autonomous Systems}
+In fact, adaptive controllers for linear time-invariant plants usually make the closed-loop control systems nonlinear and non-autonomous.
+\subsection{Concepts of Stability}
+\subsubsection{Local and Global Stability}
+Linear time-invariant systems are either asymptotically stable, or marginally stable, or unstable, as can be seen from the modal decomposition of linear system solutions; linear asymptotic stability is always global and exponential, and linear instability always implies exponential blow-up.
+
+\subsection{Lyapunov's Direct Method}
+Comparing the definition of stability and mechanical energy, one can easily see some relations between the mechanical energy and the stability concepts described earlier:
+\begin{itemize}
+  \item zero energy corresponds to the equilibrium point (${\bf x=0},{\bf \dot{x}=0}$)
+  \item asymptotic stability implies the convergence of mechanical energy to zero
+  \item instability is related to the growth of mechanical energy
+\end{itemize}
 
 
 
@@ -103,6 +137,7 @@ Limit cycles in nonlinear systems are different from linear oscillations in a nu
 %第二段使用黑体,上面的一个空行表示另起一段
 
 %\CJKfamily{hei}LaTex 将空格和制表符视为相同的距离.
+
 
 %多个连续的空白字符 等同为一个空白字符
 

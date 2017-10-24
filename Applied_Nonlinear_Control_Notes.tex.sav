@@ -100,6 +100,7 @@ Limit cycles in nonlinear systems are different from linear oscillations in a nu
 
 \subsection{Constructing Phase Portraits}
 
+\section{Phase Plane Analysis}
 
 \subsection{Phase Plane Analysis of Nonlinear Systems}
 Phase plane analysis of nonlinear systems is related to that of linear systems, because the local behavior of a nonlinear system can be approximated by a linear system behavior. Yet, nonlinear systems can display much more complicated patterns in the phase plane, such as multiple equilibrium points and limit cycles.
@@ -118,23 +119,8 @@ Depending on the motion patterns of the trajectories in the vicinity of the limi
 \subsection{Nonlinear Systems and Equilibrium Points}
 \subsubsection{Autonomous and Non-autonomous Systems}
 In fact, adaptive controllers for linear time-invariant plants usually make the closed-loop control systems nonlinear and non-autonomous.
-\subsection{Concepts of Stability}
-\subsubsection{Local and Global Stability}
-Linear time-invariant systems are either asymptotically stable, or marginally stable, or unstable, as can be seen from the modal decomposition of linear system solutions; linear asymptotic stability is always global and exponential, and linear instability always implies exponential blow-up.
 
-\subsection{Lyapunov's Direct Method}
-Comparing the definition of stability and mechanical energy, one can easily see some relations between the mechanical energy and the stability concepts described earlier:
-\begin{itemize}
-  \item zero energy corresponds to the equilibrium point $({\bf x=0},{\bf \dot{x}=0})$
-  \item asymptotic stability implies the convergence of mechanical energy to zero
-  \item instability is related to the growth of mechanical energy
-\end{itemize}
 
-Faced with a set of nonlinear differential equations, the basic procedure of Lyapunov's direct method is to generate a scalar "energy-like" function for the dynamic system, and examine the time variation of that function.
-
-\subsubsection{Positive Definite Functions and Lyapunov Functions}
-
-\subsubsection{Equilibrium Point Theorems}
 
 
 
@@ -142,7 +128,6 @@ Faced with a set of nonlinear differential equations, the basic procedure of Lya
 %第二段使用黑体,上面的一个空行表示另起一段
 
 %\CJKfamily{hei}LaTex 将空格和制表符视为相同的距离.
-
 
 %多个连续的空白字符 等同为一个空白字符
 
